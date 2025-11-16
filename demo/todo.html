@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemAgent AI Demo - To-Do App with Memory</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        #todo-list { margin-bottom: 20px; }
+        .todo-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #ccc; margin-bottom: 5px; }
+        .completed { text-decoration: line-through; color: gray; }
+        #new-todo { width: 70%; padding: 10px; }
+        button { padding: 10px; margin-left: 5px; }
+        #stats { background: #f0f0f0; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>MemAgent AI To-Do App</h1>
+    <p>An AI-powered to-do list that remembers your tasks and preferences!</p>
+
+    <div id="todo-list"></div>
+    <input type="text" id="new-todo" placeholder="Add a new task...">
+    <button onclick="addTodo()">Add Task</button>
+
+    <script type="module" src="todo.js"></script>
+</body>
+</html>
